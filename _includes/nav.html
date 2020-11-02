@@ -94,16 +94,16 @@
                     <li><a href="{{ site.url }}/appointment/">임용</a></li>
 				</ul>
             </li>
-            <li><a href="{{ site.url }}/develp">개발</a></li>
+            <li><a href="{{ site.url }}/develop">개발</a></li>
             <li><a href="{{ site.url }}/knowledge">잡지식</a></li>
 
-            <li>
+            <!-- <li>
 				<a href="#"></a>
 				<ul class="dl-submenu">
 					<li><a href="{{ site.url }}/posts/">All Posts</a></li>
 					<li><a href="{{ site.url }}/tags/">All Tags</a></li>
 				</ul>
-			</li>
+			</li> -->
 			{% for link in site.data.navigation %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}

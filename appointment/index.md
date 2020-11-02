@@ -1,6 +1,6 @@
 ---
 layout: project
-title: All Projects
+title: appointment
 excerpt: "A List of Projects"
 comments: false
 ---

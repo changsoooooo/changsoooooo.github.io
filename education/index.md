@@ -1,6 +1,6 @@
 ---
 layout: project
-title: All Projects
+title: education
 excerpt: "A List of Projects"
 comments: false
 ---

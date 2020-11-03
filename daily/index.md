@@ -1,5 +1,5 @@
 ---
-layout: daily-list
+layout: post-list
 title: daily
 excerpt: "A List of Projects"
 comments: false

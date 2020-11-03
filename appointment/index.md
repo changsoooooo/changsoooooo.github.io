@@ -1,6 +1,6 @@
 ---
 layout: project
-title: appointment
+title: 임용
 excerpt: "A List of Projects"
 comments: false
 ---

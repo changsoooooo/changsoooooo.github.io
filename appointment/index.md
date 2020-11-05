@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-list
 title: "임용"
 category: "임용"
 excerpt: "A List of Projects"

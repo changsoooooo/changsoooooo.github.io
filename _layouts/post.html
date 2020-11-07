@@ -24,8 +24,13 @@ layout: compress
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
+                    <p>페이지</p>
                     {{ page }}
+                    <p>포스트</p>
                     {{ post }}
+                    <p>사이트</p>
+                    {{ site }}
+
 
                     {% if post.category == "daily" %}
                     <a class="btn zoombtn" href="{{site.url}}/daily/">

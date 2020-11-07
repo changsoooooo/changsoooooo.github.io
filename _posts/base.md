@@ -1,0 +1,62 @@
+알고리즘 기본 상식들
+===================
+
+공백 포함 입력 받기
+--------------------
+
+getline(cin,s)을 일반적으로 사용
+
+gets함수는 C++11이전 버전에서 허용됨<br?
+아니면 fgets혹은 scanf의 %[^/n]형식 지정자 사용 입력함<br>
+하지만 맨앞 공백이 무시되거나 문자열 마지막의 \n을 지워줘야하는등 귀찮음
+
+
+입출력 최적화
+--------------
+ios::sync_with_stdio(0);<br>
+cin.tie(0);<br>
+
+본적으로는 C++ stream과 C stream 간의 출력 순서를 유지할 수 있도록 sync를 유지하고 있으나,<br>
+cout만 사용할 경우 sync를 유지할 필요가 없으므로 시간을 절약하기 위해 sync를 꺼야 한다.<br>
+
+```
+int main(){
+  printf("C stream 1\n");
+  cout<< "C++ stream 1\n";
+  printf("C stream 2\n");
+  cout<< "C++ stream 2\n";
+}
+```
+위 코드 실행시에 결과는 
+```
+C stream 1
+C++ stream 1
+C stream 2
+C++ stream 2
+```
+이런식으로 각각의 순서에 맞게 나온다 
+
+하지만 sync를 끄면
+```
+int main(){
+  ios::sync_with_stdio(0);
+  printf("C stream 1\n");
+  cout<< "C++ stream 1\n";
+  printf("C stream 2\n");
+  cout<< "C++ stream 2\n";
+}
+```
+위 코드 실행시에 결과는 
+```
+C stream 1
+C stream 2
+C++ stream 1
+C++ stream 2
+```
+순서가 유지되지 않고 각각몰아서 나온다.
+
+cin.tie(0)은 cin과 cout이 번갈아 나올 때 마다 flush를 하지 않도록 하는 명령이다.<br>
+채점 환경에서는 input buffer와 output buffer가 분리되어 있기 때문에 flush를 해줄 필요가 없다.<br>
+비슷한 이유로 줄바꿈을 endl로 하는 경우가 있는데, endl은 줄을 바꾸고(즉 '\n'을 출력하고) flush를 하라는 명령이므로<br>
+endl을 사용하면 불필요한 flush 명령이 지속적으로 발생해 시간초과가 발생할 수 있습니다.<br>
+

@@ -24,24 +24,20 @@ layout: compress
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
-                    <p>페이지</p>
-                    {{ page }}
-                    <p>페이지</p>
-                    {{ page.category }}
                     
                     
 
                     {% if page.category == "daily" %}
                     <a class="btn zoombtn" href="{{site.url}}/daily/">
-                    {% elsif post.category == "임용"  %}
+                    {% elsif page.category == "임용"  %}
                     <a class="btn zoombtn" href="{{site.url}}/appointment/">
-                    {% elsif post.category == "교육학"  %}
+                    {% elsif page.category == "교육학"  %}
                     <a class="btn zoombtn" href="{{site.url}}/education/">
-                    {% elsif post.category == "정보 컴퓨터 교육"  %}
+                    {% elsif page.category == "정보 컴퓨터 교육"  %}
                     <a class="btn zoombtn" href="{{site.url}}/computer-edu/">
-                    {% elsif post.category == "개발"  %}
+                    {% elsif page.category == "개발"  %}
                     <a class="btn zoombtn" href="{{site.url}}/develop/">
-                    {% elsif post.category == "잡지식"  %}
+                    {% elsif page.category == "잡지식"  %}
                     <a class="btn zoombtn" href="{{site.url}}/knowledge/">
                     {% endif %}
                         <i class="fa fa-chevron-left"></i>

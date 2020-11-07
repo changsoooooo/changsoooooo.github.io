@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "10093(숫자)"
+category: "develop"
+date:   2020-11-08
+excerpt: "10093(숫자)"
+project: false
+comments: true
+---
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <math.h>
+//숫자 10093
+using namespace std;
+int main(){
+	ios::sync_with_stdio(0); 
+	cin.tie(0);
+	
+	long long int a, b;
+	cin >> a >> b;
+	if (a>b)
+	{
+		long long int temp;
+		temp = a;
+		a = b;
+		b = temp;
+	}
+	if (a==b)
+	{
+		cout << "0" << '\n';
+	}
+	else
+	{
+		cout << b - a - 1 << '\n';
+
+	}
+	for (long long int i = a+1; i < b; i++)
+	{
+		cout << i << ' ';
+	}
+}

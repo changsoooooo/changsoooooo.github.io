@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "13300(방배정)"
+category: "develop"
+date:   2020-11-08
+excerpt: "13300(방배정)"
+project: false
+comments: true
+---
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <math.h>
+//13300 방배정
+using namespace std;
+int main(){
+	ios::sync_with_stdio(0); 
+	cin.tie(0);
+	int arr[13] = { 0 };
+	int n, k;
+	cin >> n >> k;
+	for (size_t i = 0; i < n;i++)
+	{
+		int a, b;
+		cin >> a >> b;
+		arr[a * 6 + b]++;
+	}
+	int room = 0;
+	for (size_t i = 1; i < 13; i++)
+	{
+		room = room + arr[i] / k;
+		if (arr[i]%k!=0)
+		{
+			room++;
+		}
+	}
+	cout << room;
+}

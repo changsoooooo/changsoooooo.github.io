@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <math.h>
+//휴대폰 요금 1267
+using namespace std;
+int main(){
+	ios::sync_with_stdio(0); 
+	cin.tie(0);
+	
+	int n;
+	cin >> n;
+	int m=0, y=0;
+	for (size_t i = 0; i < n; i++)
+	{
+		int t;
+		cin >> t;
+		y += (t / 30) * 10;
+		m += (t / 60) * 15;
+		if (t % 30 != 29)
+			y += 10;
+		if (t % 60 != 59)
+			m += 15;
+	}
+	if (y > m)
+		cout << "M " << m;
+	else if (m > y)
+		cout << "Y " << y;
+	else
+		cout << "Y M " << y;
+	
+}

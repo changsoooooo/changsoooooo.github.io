@@ -26,13 +26,12 @@ layout: compress
                     {% endif %}
                     <p>페이지</p>
                     {{ page }}
-                    <p>포스트</p>
-                    {{ post }}
-                    <p>사이트</p>
-                    {{ site }}
+                    <p>페이지</p>
+                    {{ page.category }}
+                    
+                    
 
-
-                    {% if post.category == "daily" %}
+                    {% if page.category == "daily" %}
                     <a class="btn zoombtn" href="{{site.url}}/daily/">
                     {% elsif post.category == "임용"  %}
                     <a class="btn zoombtn" href="{{site.url}}/appointment/">

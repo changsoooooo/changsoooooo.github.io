@@ -121,7 +121,7 @@ Default gateway (IP): 192.168.0.1 → 공유기의 IP
 4. Apply후에 FTZ training init 6(재부팅) 하면 정상작동!
 
 
-<h1>해결</>
+<h1>해결</h1>
 
 며칠후 또 안돼
 

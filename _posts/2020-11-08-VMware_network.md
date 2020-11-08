@@ -20,11 +20,11 @@ IP확인 후 xshell접속을 시도했는데 IP확인을 할수없어 실패
 
 * ifconfig를 입력하였을 때
 
-![ifconfig](ifconfig.JPG)
+![ifconfig](assets/img/ifconfig.JPG)
 
 * sudo service network restart 입력시
 
-![restart](restart%20net.JPG)
+![restart](assets/img/restart%20net.JPG)
 
 1. 설정 파일 변경
 sudo vi /etc/sysconfig/network-scripts에 ifcfg-eth0 로 파일 수정

@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Markdown Syntax"
-category: "develop"
+category: "null"
 date:   2016-03-15
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-category: "develop"
+
 
 tag:
 - markdown 

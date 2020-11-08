@@ -3,7 +3,7 @@ layout: post
 title:  "MathJax Example"
 date:   2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
-category: "정보 컴퓨터 교육"
+category: "null"
 tag:
 - markdown 
 - mathjax

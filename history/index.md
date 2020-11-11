@@ -1,7 +1,7 @@
 ---
 layout: post-list
-title: "잡지식"
-category: "잡지식"
+title: "한국사"
+category: "한국사"
 excerpt: "A List of Projects"
 comments: false
 ---
